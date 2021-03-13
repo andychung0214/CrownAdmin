@@ -91,11 +91,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\vendor.css" />
     <None Remove="ClientApp\src\auth.css" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="ClientApp\src\auth.css">
+    <Content Include="ClientApp\src\app\auth.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\app\vendor.css">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
