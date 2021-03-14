@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -231,6 +231,11 @@
     <None Include="wwwroot\sass\theme\_socicon.scss" />
     <None Include="wwwroot\sass\theme\_table.scss" />
     <None Include="wwwroot\sass\theme\_tree.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\app\login\" />
+    <Folder Include="wwwroot\app\component\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

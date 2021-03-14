@@ -7,7 +7,6 @@
 
   angular.module('BlurAdmin.pages', [
     'ui.router',
-
     'BlurAdmin.pages.dashboard',
     'BlurAdmin.pages.ui',
     'BlurAdmin.pages.components',
@@ -15,7 +14,10 @@
     'BlurAdmin.pages.tables',
     'BlurAdmin.pages.charts',
     'BlurAdmin.pages.maps',
-    'BlurAdmin.pages.profile',
+      'BlurAdmin.pages.profile',
+      'BlurAdmin.pages.articleManagement',
+      'BlurAdmin.pages.myNewPage',
+      'BlurAdmin.pages.userManagement'
   ])
       .config(routeConfig);
 
