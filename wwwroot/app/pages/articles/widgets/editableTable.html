@@ -1,0 +1,31 @@
+<div class="horizontal-scroll">
+  <table class="table table-hover" st-table="articlesData">
+    <thead>
+    <tr class="sortable">
+      <th class="table-id" st-sort="id" st-sort-default="true">#</th>
+      <th st-sort="title">Title</th>
+      <th st-sort="abstract">Abstract</th>
+      <th st-sort="createDate">createDate</th>
+      <th st-sort="status">Status</th>
+      <th st-sort="focus">Focus</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="item in articlesData" class="editable-tr-wrap">
+      <td class="table-id">{{item.id}}</td>
+      <td><span editable-text="item.title" blur="cancel">{{item.title}}</span></td>
+      <td><span editable-text="item.abstract" blur="cancel">{{item.abstract}}</span></td>
+      <td><span editable-text="item.createDate" blur="cancel">{{item.createDate}}</span></td>
+      <td><a class="email-link" ng-href="mailto:{{item.status}}">{{item.status}}</a></td>
+      <td><span editable-text="item.focus" blur="cancel">{{item.focus}}</span></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="6" class="text-center">
+        <div st-pagination="" st-items-by-page="12" st-displayed-pages="5"></div>
+      </td>
+    </tr>
+    </tfoot>
+  </table>
+</div>

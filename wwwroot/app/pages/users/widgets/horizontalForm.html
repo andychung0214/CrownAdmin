@@ -1,0 +1,41 @@
+<form class="form-horizontal" ng-submit="this.create()">
+    <div class="form-group">
+        <label for="inputTitle" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputTitle" placeholder="Name" >
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputAbstract" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputAbstract" placeholder="Password" >
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="selStatus" class="col-sm-2 control-label">Status</label>
+        <div class="col-sm-10">
+            <!--<input type="text" class="form-control" id="inputStatus" placeholder="Status">-->
+            <select id="selStatus">
+                <option disabled ></option>
+                <option value="false">false</option>
+                <option valus="true">true</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span>Remember me</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <input id="btnUpdateArticle" type="submit" class="btn btn-success" ng-click="angular.create()" value="Create User">
+            <button class="btn btn-secondary">Cancel</button>
+        </div>
+    </div>
+</form>

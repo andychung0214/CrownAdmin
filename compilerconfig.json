@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "wwwroot/app/sass/common.css",
+    "inputFile": "wwwroot/app/sass/common.scss"
+  },
+  {
+    "outputFile": "wwwroot/app/sass/main.css",
+    "inputFile": "wwwroot/app/sass/main.scss"
+  },
+  {
+    "outputFile": "wwwroot/app/sass/theme/conf/colorScheme/_blur.css",
+    "inputFile": "wwwroot/app/sass/theme/conf/colorScheme/_blur.scss"
+  }
+]

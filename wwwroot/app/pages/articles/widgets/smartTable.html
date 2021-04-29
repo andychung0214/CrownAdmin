@@ -1,0 +1,68 @@
+﻿<div class="horizontal-scroll">
+    <div class="form-group select-page-size-wrap ">
+        <label>
+            Rows on page
+            <select class="form-control selectpicker show-tick" title="Rows on page" selectpicker
+                    ng-model="smartTablePageSize" ng-options="i for i in [5,10,15,20,25]">
+            </select>
+        </label>
+    </div>
+    <table class="table" st-table="articlesData">
+        <thead>
+            <tr class="sortable ">
+                <th class="table-id" st-sort="id" st-sort-default="true">#</th>
+                <th st-sort="title">Title</th>
+                <th st-sort="abstract">Abstract</th>
+                <th st-sort="description">Description</th>
+                <th st-sort="createDate">Create Date</th>
+                <th st-sort="status">Status</th>
+                <th st-sort="focus">Focus</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>
+                    <input st-search="title" placeholder="Search First Name" class="input-sm form-control search-input"
+                           type="search" />
+                </th>
+                <th>
+                    <input st-search="abstract" placeholder="Search Last Name" class="input-sm form-control search-input"
+                           type="search" />
+                </th>
+                <th>
+                    <input st-search="description" placeholder="Article Description" class="input-sm form-control search-input"
+                           type="search" />
+                </th>
+                <th>
+                    <input st-search="createDate" placeholder="Search Created Date" class="input-sm form-control search-input"
+                           type="search" />
+                </th>
+                <th>
+                    <input st-search="status" placeholder="Search Created Date" class="input-sm form-control search-input"
+                           type="search" />
+                </th>
+                <th>
+                    <input st-search="focus" placeholder="Search Created Date" class="input-sm form-control search-input"
+                           type="search" />
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in articlesData">
+                <td class="table-id">{{item.id}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.abstract}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.createDate}}</td>
+                <td>{{item.status}}</td>
+                <td>{{item.focus}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" class="text-center">
+                    <div st-pagination="" st-items-by-page="smartTablePageSize" st-displayed-pages="5"></div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
