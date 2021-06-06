@@ -8,7 +8,6 @@
 
 ## 套版
 來源：[BlurAdmin](https://akveo.github.io/blur-admin/)     
-套用BlurAdmin
 
 ## 資料取得
 - 使用API建立
